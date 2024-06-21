@@ -1,6 +1,28 @@
 {
   "compilerOptions": {
+    "outDir": "public",
+    // Enable latest features
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true /* Ensure that each file can be safely transpiled without relying on other imports. */,
+    "allowSyntheticDefaultImports": true /* Allow 'import x from y' when a module doesn't have a default export. */,
+    "forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+
+    // Bundler mode
+    "moduleResolution": "node",
+    "noEmit": true,
+
+    // Best practices
+    "strict": true,
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "noFallthroughCasesInSwitch": true,
+
+    // Some stricter flags (disabled by default)
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noPropertyAccessFromIndexSignature": false
   }
 }

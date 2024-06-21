@@ -9,15 +9,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "vercel dev"
+    "dev": "DEBUG=bot* bun run --watch src/index.ts",
+    "build": "ncc build src/index.ts -o public -m"
   },
   "devDependencies": {
+    "@vercel/ncc": "^0.38.1",
     "@vercel/node": "^3.1.7",
     "vercel": "^34.2.7"
   },
   "dependencies": {
-    "telegraf": "^4.16.3",
-    "valibot": "^0.33.3",
-    "zod": "^3.23.8"
+    "telegraf": "^4.16.3"
   }
 }
