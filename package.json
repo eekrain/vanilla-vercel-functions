@@ -1,5 +1,10 @@
 {
-  "name": "vanilla-vercel-functions",
+  "name": "telegraf-vercel-esm-boilerplate",
+  "version": "1.0.0",
+  "description": "Telegram Bot Vercel Boilerplate",
+  "author": "Ardian Eka Candra (https://github.com/eekrain)",
+  "homepage": "https://github.com/eekrain/telegraf-vercel-esm-boilerplate",
+  "main": "src/index.ts",
   "license": "MIT",
   "private": true,
   "type": "module",
